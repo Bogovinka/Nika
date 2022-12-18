@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nika", "Nika\Nika.csproj", "{FBECBC6F-12F7-4BEC-A8C8-7913FDD6600F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBECBC6F-12F7-4BEC-A8C8-7913FDD6600F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBECBC6F-12F7-4BEC-A8C8-7913FDD6600F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBECBC6F-12F7-4BEC-A8C8-7913FDD6600F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBECBC6F-12F7-4BEC-A8C8-7913FDD6600F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79AFB7AB-7DC9-42B9-8DCC-D1FD755B8DE3}
+	EndGlobalSection
+EndGlobal

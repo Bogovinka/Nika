@@ -1,0 +1,28 @@
+CREATE TABLE Games(
+	ID int primary key identity(1,1),
+	Name nvarchar(250),
+	Photo nvarchar(250),
+	Price int);
+	
+CREATE TABLE Users(
+	ID int primary key identity(1,1),
+	Login nvarchar(250),
+	Password nvarchar(250));
+	
+CREATE TABLE Basket(
+	ID int primary key identity(1,1),
+	Users_id int foreign key references Users(ID),
+	Games_id int foreign key references Games(ID));
+	
+CREATE TABLE BuyGames(
+	ID int primary key identity(1,1),
+	Users_id int foreign key references Users(ID),
+	Games_id int foreign key references Games(ID));
+	
+INSERT INTO Games VALUES ('CS:GO', '/Images/cs.jpg', 300),
+('GTA5', '/Images/gta5.jpg', 1200),
+('Garrys mod', '/Images/gar.jpg', 300),
+('Minecraft', '/Images/mice.jpg', 1500),
+('Rocket League', '/Images/rl.jpg', 800);
+
+INSERT INTO Users VALUES ('user1', 'user1'), ('user2', 'user2');

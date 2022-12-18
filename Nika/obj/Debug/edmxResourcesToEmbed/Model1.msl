@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище DatabaseModelContainer" CdmEntityContainer="DatabaseEntities">
+    <EntitySetMapping Name="Basket">
+      <EntityTypeMapping TypeName="DatabaseModel.Basket">
+        <MappingFragment StoreEntitySet="Basket">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Users_id" ColumnName="Users_id" />
+          <ScalarProperty Name="Games_id" ColumnName="Games_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BuyGames">
+      <EntityTypeMapping TypeName="DatabaseModel.BuyGames">
+        <MappingFragment StoreEntitySet="BuyGames">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Users_id" ColumnName="Users_id" />
+          <ScalarProperty Name="Games_id" ColumnName="Games_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Games">
+      <EntityTypeMapping TypeName="DatabaseModel.Games">
+        <MappingFragment StoreEntitySet="Games">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="DatabaseModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

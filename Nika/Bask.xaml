@@ -1,0 +1,28 @@
+﻿<Window x:Class="Nika.Bask"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nika"
+        mc:Ignorable="d"
+        Title="Корзина" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Height="450" Width="800">
+    <Grid>
+        <ListView Margin="0,0,0,50" HorizontalAlignment="Center"  x:Name="listShop">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <StackPanel Orientation="Horizontal" Background="#FF636363" >
+                            <Image Width="150" Height="150" Source="{Binding Games.Photo}"></Image>
+                            <Label VerticalAlignment="Center"  Foreground="White" FontWeight="Bold" Content="{Binding Games.Name}"/>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,10" Orientation="Horizontal">
+            <Button x:Name="DelBas" Click="DelBas_Click">Убрать из корзины</Button>
+            <Button Margin="10,0,0,0" x:Name="Buy" Click="Buy_Click">Купить</Button>
+            <Button Margin="10,0,0,0" x:Name="Exit" Click="del_Click">Выйти</Button>
+        </StackPanel>
+    </Grid>
+</Window>

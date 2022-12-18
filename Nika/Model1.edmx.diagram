@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ee3f75ae651f49818f7d3cda3eb67a02" Name="Diagram1">
+        <EntityTypeShape EntityType="DatabaseModel.Basket" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.BuyGames" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Games" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Users" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="DatabaseModel.FK__Basket__Games_id__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__Basket__Users_id__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__BuyGames__Games___3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__BuyGames__Users___3E52440B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
